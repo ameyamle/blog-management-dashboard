@@ -122,7 +122,7 @@ export default function BlogForm({ mode, blogId }: Props) {
     <div className="form-page">
       <div className="form-container">
         <div className="form-header space-y-2">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
+          <p className="Edit Blog">
             {mode === "create" ? "New Post" : "Editing"}
           </p>
           <h1 className="form-title">

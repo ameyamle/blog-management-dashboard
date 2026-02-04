@@ -110,3 +110,49 @@ body {
 #root .page-dots {
   @apply px-2 text-slate-400;
 }
+
+#root .form-action-word {
+  @apply text-sm font-semibold uppercase tracking-[0.2em] text-blue-600;
+}
+
+#root .edit-btn {
+  @apply flex-1 rounded-lg bg-emerald-600 px-3 py-2 text-center text-sm font-semibold text-white transition hover:bg-emerald-700;
+}
+
+#root .delete-btn {
+  @apply flex-1 rounded-lg cursor-pointer bg-rose-600 px-3 py-2 text-sm font-semibold text-white transition hover:bg-rose-700;
+}
+
+/* ✅ Success Modal Utilities (Scoped) */
+
+#root .success-modal-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center 
+  bg-slate-900/40 backdrop-blur-sm;
+}
+
+#root .success-modal-card {
+  @apply w-full max-w-sm p-6 text-center 
+  rounded-2xl border border-slate-200 bg-white shadow-lg;
+}
+
+#root .success-modal-icon {
+  @apply mx-auto mb-4 flex h-12 w-12 items-center justify-center 
+  rounded-full bg-emerald-100 text-emerald-600;
+}
+
+#root .success-modal-icon-text {
+  @apply text-lg font-semibold;
+}
+
+#root .success-modal-title {
+  @apply text-xl font-semibold text-slate-900;
+}
+
+#root .success-modal-message {
+  @apply mt-2 text-sm text-slate-600;
+}
+
+#root .success-modal-btn {
+  @apply mt-6 w-full rounded-xl bg-emerald-600 py-2.5 
+  text-sm font-semibold text-white transition hover:bg-emerald-700;
+}

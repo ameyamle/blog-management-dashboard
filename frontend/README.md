@@ -114,7 +114,6 @@ npm run dev
 Backend runs on:
 http://localhost:5000
 
-###Frontend Setup###
 ## 8. Open Frontend Folder
 cd ../frontend
 

@@ -54,12 +54,6 @@ export default function RootLayout({
                 </Link>
               </nav>
 
-              <Link
-                href="/blogs/create"
-                className="inline-flex items-center rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-sm shadow-blue-200/40 transition hover:bg-blue-700"
-              >
-                Create Post
-              </Link>
             </div>
           </header>
 

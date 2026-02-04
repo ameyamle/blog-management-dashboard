@@ -180,14 +180,14 @@ export default function BlogsPage() {
             <div className="mt-4 flex gap-2">
               <Link
                 href={`/blogs/edit/${blog.id}`}
-                className="flex-1 rounded-lg bg-emerald-600 px-3 py-2 text-center text-sm font-semibold text-white transition hover:bg-emerald-700"
+                className="edit-btn"
               >
                 Edit
               </Link>
 
               <button
                 onClick={() => openDeleteModal(blog.id)}
-                className="flex-1 rounded-lg cursor-pointer bg-rose-600 px-3 py-2 text-sm font-semibold text-white transition hover:bg-rose-700"
+                className="delete-btn"
               >
                 Delete
               </button>
