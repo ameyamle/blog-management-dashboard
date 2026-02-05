@@ -46,10 +46,7 @@ export default function BlogsPage() {
     <div className="space-y-8">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="space-y-2">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
-            Posts
-          </p>
-          <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+          <h1 className="page-header">
             Blog Management
           </h1>
           <p className="text-sm text-slate-600">
@@ -59,7 +56,7 @@ export default function BlogsPage() {
 
         <Link
           href="/blogs/create"
-          className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-blue-200/40 transition hover:bg-blue-700"
+          className="create-btn"
         >
           Create Blog
         </Link>
@@ -70,14 +67,16 @@ export default function BlogsPage() {
           <input
             type="text"
             placeholder="Search blogs..."
-            className="w-full rounded-xl border border-slate-200/80 bg-white px-4 py-2.5 text-sm focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none sm:max-w-xs"
+            className="search-blogs"
           />
 
-          <select className="w-full rounded-xl border border-slate-200/80 bg-white px-4 py-2.5 text-sm text-slate-600 focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none sm:max-w-[200px]">
+          <select className="filter-dropdown">
             <option value="">Filter by Status</option>
             <option value="draft">Draft</option>
             <option value="published">Published</option>
           </select>
+
+          <button className="search-btn">Search</button>
         </div>
       </div>
 
@@ -114,7 +113,7 @@ export default function BlogsPage() {
 
                 <td className="px-4 py-3">
                   <span
-                    className={`px-3 py-1 rounded-full text-xs font-medium ${
+                    className={`status-tag ${
                       blog.status === "published"
                         ? "bg-emerald-100 text-emerald-700"
                         : "bg-amber-100 text-amber-700"
@@ -135,7 +134,7 @@ export default function BlogsPage() {
 
                     <button
                       onClick={() => openDeleteModal(blog.id)}
-                      className="rounded-lg bg-rose-600 px-4 py-1.5 text-xs font-semibold text-white transition hover:bg-rose-700"
+                      className="rounded-lg bg-rose-600 px-4 py-1.5 text-xs cursor-pointer font-semibold text-white transition hover:bg-rose-700"
                     >
                       Delete
                     </button>

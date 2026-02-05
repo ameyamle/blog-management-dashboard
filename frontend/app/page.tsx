@@ -9,7 +9,7 @@ export default function Home() {
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
               Dashboard
             </p>
-            <h1 className="text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
+            <h1 className="page-header">
               Manage your content with confidence.
             </h1>
             <p className="max-w-xl text-base text-slate-600 sm:text-lg">
@@ -20,13 +20,13 @@ export default function Home() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
               href="/blogs"
-              className="inline-flex items-center justify-center rounded-xl border border-slate-200/80 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-100"
+              className="view-posts-btn"
             >
               View Posts
             </Link>
             <Link
               href="/blogs/create"
-              className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-blue-200/40 transition hover:bg-blue-700"
+              className="create-posts-btn"
             >
               Create Post
             </Link>

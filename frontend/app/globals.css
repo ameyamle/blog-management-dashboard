@@ -53,19 +53,13 @@ body {
   @apply text-sm font-medium text-slate-700;
 }
 
-#root .form-input {
-  @apply mt-1 w-full rounded-xl border border-slate-200/80 bg-white px-4 py-2.5 text-sm 
-  focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none;
+#root .form-input,
+#root .form-select {
+  @apply mt-1 w-full rounded-xl border border-slate-500 bg-white px-4 py-2.5 text-sm focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none;
 }
 
 #root .form-textarea {
-  @apply mt-1 w-full rounded-xl border border-slate-200/80 bg-white px-4 py-3 text-sm 
-  focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none resize-none;
-}
-
-#root .form-select {
-  @apply mt-1 w-full rounded-xl border border-slate-200/80 bg-white px-4 py-2.5 text-sm 
-  focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none;
+  @apply mt-1 w-full rounded-xl border border-slate-500 bg-white px-4 py-2.5 text-sm focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none resize-none;
 }
 
 #root .form-checkbox-box {
@@ -153,6 +147,37 @@ body {
 }
 
 #root .success-modal-btn {
-  @apply mt-6 w-full rounded-xl bg-emerald-600 py-2.5 
-  text-sm font-semibold text-white transition hover:bg-emerald-700;
+  @apply mt-6 w-full rounded-xl bg-emerald-600 py-2.5 text-sm font-semibold cursor-pointer text-white transition hover:bg-emerald-700;
+}
+
+#root .status-tag {
+  @apply px-3 py-1 rounded-full text-xs font-medium;
+}
+
+#root .create-btn {
+  @apply inline-flex items-center justify-center rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm shadow-blue-200/40 transition hover:bg-blue-700;
+}
+
+#root .search-blogs {
+  @apply w-full rounded-xl border border-slate-200/80 bg-white px-4 py-2.5 text-sm focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none sm:max-w-xs;
+}
+
+#root .filter-dropdown {
+  @apply w-full rounded-xl border border-slate-200/80 bg-white px-4 py-2.5 text-sm text-slate-600 focus:border-blue-400 focus:ring-2 focus:ring-blue-100 outline-none sm:max-w-[200px];
+}
+
+#root .search-btn {
+  @apply rounded-xl bg-slate-400 px-4 py-2 text-sm text-white sm:max-w-[200px] cursor-pointer;
+}
+
+#root .page-header {
+  @apply text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl;
+}
+
+#root .view-posts-btn{
+  @apply inline-flex items-center justify-center rounded-xl border border-slate-200/80 bg-white px-3 py-2.5 text-sm font-semibold text-slate-700 shadow-sm transition hover:bg-slate-100;
+}
+
+#root .create-posts-btn{
+  @apply inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2.5 text-sm font-semibold text-white shadow-sm shadow-blue-200/40 transition hover:bg-blue-700;
 }

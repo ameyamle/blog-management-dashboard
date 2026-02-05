@@ -122,18 +122,15 @@ export default function BlogForm({ mode, blogId }: Props) {
     <div className="form-page">
       <div className="form-container">
         <div className="form-header space-y-2">
-          <p className="Edit Blog">
+          <p className="text-lg font-bold text-center bg-blue-600 text-white w-fit rounded-md px-2 mx-auto">
             {mode === "create" ? "New Post" : "Editing"}
           </p>
           <h1 className="form-title">
             {mode === "create" ? "Create Blog" : "Edit Blog"}
           </h1>
-          <p className="text-sm text-slate-600">
-            Keep details concise and focus on a clear, publish-ready story.
-          </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="form-card">
+        <form onSubmit={handleSubmit} className="form-card mt-4">
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
             <div>
               <label className="form-label">Title</label>
